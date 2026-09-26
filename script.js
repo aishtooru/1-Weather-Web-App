@@ -1,11 +1,9 @@
-const apiKey = "7c8811283038d5d2da6695396a4b7214";
-const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
+const apiKey = ""; // fill with your api key
+const apiUrl = ""; // fill with your api url
 
 const searchBox = document.querySelector(".search input");
 const searchBtn = document.querySelector(".search button");
 const weatherIcon = document.querySelector(".weather-icon");
-
-// https://api.openweathermap.org/data/2.5/weather?q=berlin&appid=7c8811283038d5d2da6695396a4b7214&units=metric (Ini link asli)
 
 async function checkWeather(city) {
     const response = await fetch(apiUrl + city + `&appid=${apiKey}`);
